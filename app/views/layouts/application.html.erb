@@ -10,6 +10,18 @@
     <%= javascript_importmap_tags %>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+      <%= ".msg-#{current_user&.id}"%> {
+        background-color: #007bff !important;
+        padding: 10px;
+      }
+
+      <%= ".cont-#{current_user&.id}"%> {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+    </style> 
   </head>
 
   <body>
